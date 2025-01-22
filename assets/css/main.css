@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* .quicksand {
+    font-family: "Quicksand", serif;
+} */
+*, body{
+    font-family: "Quicksand";
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+header .logo img{
+    height: auto;
+    width: 100%;
+}
+header nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    padding: 40px 12px;
+}
+header nav ul li a{
+    font-size: 16px;
+    color: var(--bs-dark);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    /* margin: 20px 0px; */
+}
+header nav ul li a.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: calc(50%);
+    min-height: 100px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 1296px;
+    padding: 16px 16px 8px 16px;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.menu-dropdown a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 8px;
+    color: #50596A;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+.menu-dropdown a.instagram{
+    background-color: #C13584;
+}
+.menu-dropdown a.tiktok, .menu-dropdown a.twitter, .menu-dropdown a.kick{
+    background-color: #000;
+}
+.menu-dropdown a.youtube{
+    background-color: #FF0000;
+}
+.menu-dropdown a.facebook{
+    background-color: #485A96;
+}
+.menu-dropdown a.telegram{
+    background-color: #24A1DE;
+}
+.menu-dropdown a.spotify{
+    background-color: #1DB954;
+}
+.menu-dropdown a.twitch{
+    background-color: #9146FF;
+}
+.menu-dropdown a.kick{
+    background-color: #00E701;
+}
+.menu-dropdown a.linkedin{
+    background-color: #0077B5;
+}
+.menu-dropdown a.reddit{
+    background-color: #FF4500;
+}
+.menu-dropdown a.snapchat{
+    background-color: #FFFC00;
+}
+.menu-dropdown a.tinder{
+    background-color: #FF6B6B;
+}
+.menu-dropdown a.pinterest{
+    background-color: #E60023;
+}
+.menu-dropdown a.soundcloud{
+    background-color: #FF5500;
+}
+.menu-dropdown a.google{
+    background-color: #4285F4;
+}
+
+
+.menu-dropdown a .icon{
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 48px;
+    background-color: rgba(216, 216, 216, 0.2);
+}
+.menu-dropdown a span{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bs-white);
+}
+.menu-dropdown a:hover::before{
+    display: none;
+}
+.dropdown-wrapper:hover .menu-dropdown {
+    display: block;
+}
+
+header nav ul li:hover .menu-dropdown {
+    display: block;
+}
+header nav ul li .dropdown:hover .menu-dropdown{
+    display: none;
+}
+
+header nav ul li a span{
+    padding-left: 8px;
+}
+header nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--bs-dark);
+    transition: width 0.3s ease-in-out;
+}
+header nav ul li a:hover::before{
+    width: 100%;
+}
+header .user-buttons{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+header .user-buttons ul{
+    display: flex;
+    gap: 16px;
+}
+header .user-buttons ul li a{
+    border: 1px solid var(--bs-dark);
+    color: var(--bs-dark);
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+header .user-buttons ul li a, .user-buttons ul li a span svg path{
+    transition: 0.3s;
+}
+header .user-buttons ul li a span:first-child{
+    padding-right: 4px;
+}
+header .user-buttons ul li a:hover, header .user-buttons ul li a:hover span svg path{
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    fill: var(--bs-white);
+}
